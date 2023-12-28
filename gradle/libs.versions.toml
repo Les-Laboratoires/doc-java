@@ -1,5 +1,4 @@
 [versions]
-dotenv = "6.4.1"
 kord-extensions = "1.6.0"
 kotlin = "1.9.22"
 logback = "1.4.12"
@@ -8,6 +7,5 @@ logback = "1.4.12"
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 
 [libraries]
-dotenv = { module = "io.github.cdimascio:dotenv-kotlin", version.ref = "dotenv" }
 kord-extensions = { module = "com.kotlindiscord.kord.extensions:kord-extensions", version.ref = "kord-extensions" }
 logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }

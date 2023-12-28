@@ -11,7 +11,6 @@ repositories {
 }
 
 dependencies {
-	implementation(libs.dotenv)
 	implementation(libs.kord.extensions)
 	implementation(libs.logback)
 }
