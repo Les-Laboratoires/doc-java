@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
 	implementation(libs.kord.extensions)
+	implementation(libs.dotenv)
 }
 
 kotlin {
