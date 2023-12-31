@@ -2,6 +2,7 @@
 kord-extensions = "1.6.0"
 kotlin = "1.9.22"
 logback = "1.4.12"
+skrapeit = "1.3.0-alpha.2"
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
@@ -9,3 +10,5 @@ kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 [libraries]
 kord-extensions = { module = "com.kotlindiscord.kord.extensions:kord-extensions", version.ref = "kord-extensions" }
 logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+skrapeit = { module = "it.skrape:skrapeit", version.ref = "skrapeit" }
+skrapeit-async-fetcher = { module = "it.skrape:skrapeit-async-fetcher", version.ref = "skrapeit" }

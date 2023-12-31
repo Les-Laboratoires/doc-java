@@ -13,6 +13,11 @@ repositories {
 dependencies {
 	implementation(libs.kord.extensions)
 	implementation(libs.logback)
+	implementation(libs.skrapeit) {
+		val logback = libs.logback.get()
+		exclude(group = logback.group, module = logback.module.name)
+	}
+	implementation(libs.skrapeit.async.fetcher)
 }
 
 kotlin {
@@ -21,4 +26,8 @@ kotlin {
 
 application {
 	mainClass = "io.github.ayfri.docjava.MainKt"
+}
+
+configurations.all {
+	exclude(group = "org.slf4j", module = "log4j-over-slf4j")
 }
